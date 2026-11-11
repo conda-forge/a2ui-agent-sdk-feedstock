@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.10.0"
+  version: "0.11.0"
   test_skip_args: >-
     -m "not performance"
     --ignore=tests/conformance/test_builder_conformance.py
@@ -35,7 +35,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/a2ui-agent-sdk/a2ui_agent_sdk-${{ version }}.tar.gz
-  sha256: 6ec0ca6e8237584fbd156711064eceb703d431f8dd9af29c201dd9b14d47e1e3
+  sha256: 9e922ade1747e29bb3fc6e41c3a30dc7cc99eb4ffd81c89f68dc59dd6dfe778c
 
 build:
   number: 0
