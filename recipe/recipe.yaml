@@ -9,6 +9,7 @@ context:
     --ignore=tests/conformance/test_catalog_conformance.py
     --ignore=tests/conformance/test_conformance.py
     --ignore=tests/conformance/test_macro_conformance.py
+    --ignore=tests/conformance/test_scaling_conformance.py
     --ignore=tests/conformance/test_skill_conformance.py
     --ignore=tests/elemental/test_compiler.py
     --ignore=tests/elemental/test_format.py
