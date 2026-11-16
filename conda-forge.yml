@@ -1,3 +1,8 @@
+bot:
+  # Release-line branches that receive migrations and rerenders but no version
+  # bumps. This key is only read from main.
+  abi_migration_branches:
+    - "v0.9.0"
 conda_build_tool: rattler-build
 github:
   branch_name: main
