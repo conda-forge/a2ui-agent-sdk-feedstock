@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.0"
+  version: "0.9.0"
   test_skip_args: >-
     -m "not performance"
     --ignore=tests/conformance
@@ -30,7 +30,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/a2ui-agent-sdk/a2ui_agent_sdk-${{ version }}.tar.gz
-  sha256: 9e922ade1747e29bb3fc6e41c3a30dc7cc99eb4ffd81c89f68dc59dd6dfe778c
+  sha256: 3caa48ab0b2d9bc835e2d96976a3698256d6f4bba778ccc03a25a9c654ad6294
 
 build:
   number: 0
@@ -45,11 +45,12 @@ requirements:
     - hatch-vcs
   run:
     - python >=${{ python_min }}
-    - a2ui-core >=0.6.0,<0.7.0
+    - a2ui-core >=0.4.0,<0.5.0
     - antlr4-python3-runtime >=4.13.0,<4.14.0
     - jsonschema >=4.0.0
     - pydantic >=2.11.0
     - pyyaml >=6.0
+    - httpx >=0.27.0
 
 tests:
   - python:
